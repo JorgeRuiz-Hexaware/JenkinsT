@@ -2,8 +2,9 @@ import java.io.*;
 import java.lang.*;
 
 public class OpenApp {
-  public void main(String[] args) {
+  public static void main(String[] args) {
     System.out.println("Opening App");
-    Runtime.exec(new String[]{"open","/Applications/Chess.app"});
+    String [] a = new String[]{"open","/Applications/Chess.app"};
+    Runtime.exec(a);
   }
 }
